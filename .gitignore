@@ -1,0 +1,9 @@
+node_modules/
+venv/
+ .DS_Store
+dist/
+ .env
+
+generated/
+cutoffs_all_compact.json
+admitwise_phase1.zip

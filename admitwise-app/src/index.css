@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: #fafafa;
+    color: #111;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 9999px;
+  }
+}
+
+
+.premium-card{
+  max-width:420px;
+  margin:40px auto;
+  padding:24px;
+  border-radius:28px;
+  background:white;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  text-align:center;
+  position:relative;
+}
+
+.lock-badge{
+  position:absolute;
+  right:-10px;
+  top:-10px;
+  width:50px;
+  height:50px;
+  border-radius:999px;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.qr-wrapper img{
+  width:220px;
+  margin:auto;
+  border-radius:20px;
+}
+
+.price{
+  font-size:2rem;
+  font-weight:700;
+  margin-top:15px;
+}
+
+.price span{
+  color:#6D5DFC;
+}
+
+.unlock{
+  margin-top:8px;
+  color:#475569;
+}
+
+.missing-features{
+  margin-top:20px;
+  padding:16px;
+  border-radius:16px;
+  background:#faf7ff;
+  text-align:left;
+}
+
+.missing-features ul{
+  margin-top:10px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.contribution{
+  margin-top:16px;
+  padding:14px;
+  border-radius:14px;
+  background:#f5f0ff;
+  color:#4c1d95;
+}
+
+
+
+.paid-btn{
+  width:100%;
+  margin-top:14px;
+  padding:12px;
+
+  border:none;
+  border-radius:14px;
+
+  background:#111827;
+  color:white;
+
+  font-weight:600;
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.paid-btn:hover{
+  transform:translateY(-2px);
+}
